@@ -1,0 +1,102 @@
+/*/Color Palette/*/
+:root{
+    --main-color: #F72585;
+    --main-color2: #4CC9F0;
+    --secondary-color: #B5179E;
+    --secondary-color2: #4895EF;
+    --third-color: #7209B7;
+    --third-color2: #4361EE;
+    --fourth-color: #560BAD;
+    --fourth-color2: #3F37C9;
+    --middle-color: #480CA8;
+    --middle-color2: #3A0CA3;
+}
+/*/Fonts/*/
+*{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+/*/Body Configuration/*/
+body{
+    scroll-behavior: smooth;
+    background: var(--secondary-color2);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 2vh;
+}
+/*/Navigation Bar/*/
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    background: var(--third-color2);
+}
+.nav-bar-small-logo{
+    align-self: center;
+    border-radius: 50%;
+    height: 8vh;
+    width: 8vh;
+    object-fit: cover;
+    margin-left: 1vw;
+}
+/*/Nav - ul/*/
+.nav-bar-button-holder{
+    display: flex;
+    width: auto;
+    gap: 1vw;
+    height: 10vh;
+}
+/*/Nav - a/*/
+.nav-bar-button-holder a,.nav-closeopen-icon{
+    align-self: center;
+}
+    /*/Nav - space - Div/*/
+    .nav-space-a{
+        width:1px;
+        height: 6vh;
+        background:var(--secondary-color2);
+    }
+    /*/Nav - Links/*/
+    .nav-bar-button-holder a{
+        font-size: 3vh;
+        text-decoration: none;
+    }
+    /*/Nav - Login / Register/*/
+    .nav-signup-box{
+        border-radius: 8px;
+        background: var(--main-color2);
+    }
+    .nav-signup-box:hover{
+        background: var(--secondary-color2);
+    }
+/*/Start of Website/*/
+.Div-Start-of-Website{
+    align-self: center;
+    width: 50vw;
+    height: 80vh;
+    background:var(--third-color);
+}
+/*/Responsive/*/
+@media only screen and (max-width:700px){
+    /*/Nav - Icon/*/
+    .nav-bar-button-holder{
+        margin-right: 2vw;
+    }
+    .nav-closeopen-icon{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-right:0vw;
+    }
+    .nav-bar-button-holder a{
+        width: 0px;
+        display: none;
+    }
+    .nav-closeopen-icon div{
+        width: 25px;
+        height: 3px;
+        background: var(--fourth-color);
+        border-radius: 5px;
+    }
+    
+}
+
