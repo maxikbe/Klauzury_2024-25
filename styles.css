@@ -75,6 +75,10 @@ body{
     height: 80vh;
     background:var(--third-color);
 }
+/*/2nd page - About Me/*/
+.Div-About-Me{
+    
+}
 /*/Responsive/*/
 @media only screen and (max-width:700px){
     /*/Nav - Icon/*/
