@@ -6,7 +6,7 @@ function MenuOut(){
             document.getElementById('Menu').classList.remove("opened-nav");
             document.getElementById('Menu').classList.add("closed-nav");
             document.getElementById('Menu').classList.remove("play-close-anim");
-        }, 2000);
+        }, 1000);
     }else if(document.getElementById('Menu').classList.contains("closed-nav")){
         document.getElementById('Menu').classList.remove("play-close-anim");
         document.getElementById('Menu').classList.add("play-open-anim");
@@ -14,6 +14,6 @@ function MenuOut(){
             document.getElementById('Menu').classList.remove("closed-nav");
             document.getElementById('Menu').classList.add("opened-nav");
             document.getElementById('Menu').classList.remove("play-open-anim");
-        }, 2000);
+        }, 1000);
     }
 }
