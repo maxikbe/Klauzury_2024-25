@@ -59,7 +59,7 @@ body{
     height: 10vh;
 }
 /*/Nav - a/*/
-.nav-bar-button-holder a,nav-closeopen-icon{
+.nav-bar-button-holder a{
     align-self: center;
 }
 .nav-bar-small-screen{
@@ -121,12 +121,20 @@ body{
         display: flex;
     }
     .nav-closeopen-icon{
+        position: relative;
         background: none;
         border: none;
+        display: flex;
+        align-self: center;
         z-index: 999;
         flex-direction: column;
+        justify-content: center;
         gap: 5px;
-        margin-right:0vw;
+        background: var(--secondary-color);
+        border-radius: 7px;
+        height: 5vh;
+        width: 7vw;
+        margin-right:-2vw;
     }
     .nav-bar-button-holder{
         display: none;
@@ -137,28 +145,38 @@ body{
         background: var(--fourth-color);
         border-radius: 5px;
     }
+    .nav-bar-small-screen-buttons-holder{
+        width: 60vw;
+        height: 100vh;
+        margin-right: -60vw;
+        background: var(--secondary-color);
+    }
     .play-open-anim{
         animation: open-icon-anim 2s 1;
-        
+    }
+    .opened-nav{
+        margin-right: 0vw;
     }
     .play-close-anim{
         animation: close-icon-anim 2s 1;
-        
+    }
+    .closed-nav{
+        margin-right: -60vw;
     }
     @keyframes open-icon-anim{
         from{
-            
+            margin-right: -60vw;
         }
         to{
-            
+            margin-right: 0vw;
         }
     }
     @keyframes close-icon-anim{
         from{
-            
+            margin-right: 0vw;
         }
         to{
-            
+            margin-right: -60vw;
         }
     }
 }
