@@ -59,8 +59,11 @@ body{
     height: 10vh;
 }
 /*/Nav - a/*/
-.nav-bar-button-holder a,.nav-closeopen-icon{
+.nav-bar-button-holder a,nav-closeopen-icon{
     align-self: center;
+}
+.nav-bar-small-screen{
+    display: none;
 }
     /*/Nav - space - Div/*/
     .nav-space-a{
@@ -114,14 +117,18 @@ body{
     .nav-bar-button-holder{
         margin-right: 2vw;
     }
-    .nav-closeopen-icon{
+    .nav-bar-small-screen{
         display: flex;
+    }
+    .nav-closeopen-icon{
+        background: none;
+        border: none;
+        z-index: 999;
         flex-direction: column;
         gap: 5px;
         margin-right:0vw;
     }
-    .nav-bar-button-holder a{
-        width: 0px;
+    .nav-bar-button-holder{
         display: none;
     }
     .nav-closeopen-icon div{
@@ -130,6 +137,29 @@ body{
         background: var(--fourth-color);
         border-radius: 5px;
     }
-    
+    .play-open-anim{
+        animation: open-icon-anim 2s 1;
+        
+    }
+    .play-close-anim{
+        animation: close-icon-anim 2s 1;
+        
+    }
+    @keyframes open-icon-anim{
+        from{
+            
+        }
+        to{
+            
+        }
+    }
+    @keyframes close-icon-anim{
+        from{
+            
+        }
+        to{
+            
+        }
+    }
 }
 
