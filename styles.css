@@ -174,13 +174,13 @@ body{
         background: var(--main-color2);
     }
     .play-open-anim{
-        animation: open-icon-anim 1s 1;
+        animation: open-icon-anim 0.5s 1;
     }
     .opened-nav{
         margin-right: 0vw;
     }
     .play-close-anim{
-        animation: close-icon-anim 1s 1;
+        animation: close-icon-anim 0.5s 1;
     }
     .closed-nav{
         margin-right: -60vw;
