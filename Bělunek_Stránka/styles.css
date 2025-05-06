@@ -1,0 +1,327 @@
+*{
+    font-family: Krub;
+    margin:0;
+    scroll-behavior: smooth;
+} 
+body{
+    background: black;
+}
+a,p,h1,h2,h3,li,b{
+    color: white;
+    font-size: clamp(0.75rem, 0.7088rem + 0.6593vw, 1.5rem);
+}
+h2{
+    text-align: center;
+    font-size: clamp(1rem, 0.8901rem + 1.7582vw, 3rem);
+    margin-bottom: 15px;
+}
+h1{
+    text-align: center;
+    font-size: clamp(2rem, 1.8901rem + 1.7582vw, 4rem);
+}
+/*/fonts/*/
+/*/Font from https://fonts.google.com - (Krub)/*/
+@font-face{
+    font-family: Krub;
+    src: url('fonts/Krub-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family: Krub2;
+    src: url('fonts/Krub-SemiBold.ttf') format('truetype')
+}
+/*/common/*/
+.Main-Div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/*/---HEADER---/*/
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background: rgba(34, 34, 34, 0.85);
+}
+.logo{
+    margin-left: 5px;
+    height: 8vh;
+    width: 8vh;
+}
+/*/navigation buttons/*/
+.Navigation-Bar-buttons{
+    margin-right: 10px;
+    display: flex;
+    gap:10px
+}
+/*/logo/home-button/*/
+.home-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*/Menu-button/*/
+.menu-button div{
+    height: 0.6vh;
+    width: 4.5vh;
+    background: rgb(255, 255, 255);
+}
+.menu-button{
+    border: none;
+    background: none;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 4.2vh;
+    width: 7vh;
+}
+/*/Menu-button-close/*/
+.menu-button-close{
+    display: flex;
+    position: absolute;
+    border: none;
+    background: none;
+    top: 10px;
+    right: 10px;
+    width: 6vh;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+.menu-button-close div{
+    width: 6.5vh;
+    position: absolute;
+    height: 0.6vh;
+    background: white;
+    rotate: 45deg;
+}
+.menu-button-close div:nth-child(1){
+    width: 6.5vh;
+    rotate: -45deg;
+}
+/*/Navigation bar/*/
+.Navigation-Bar{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 10px;
+}
+.Navigation-Bar a{
+    text-decoration: none;
+}
+/*/sidebar/*/
+.Side-Navigation-Bar{   
+    max-width: 425px;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: right 0.5s ease-in-out;
+    width: 100vw;
+    right: -100vw;
+    gap: 10px;
+    background: rgba(40, 40, 40, 0.95);
+}
+/*/inside side bar/*/
+.Side-Navigation-Bar img{
+    height: 20vw;
+    width: 20vw;
+    max-width: 75px;
+    max-height: 75px;
+    margin-bottom: 25px;
+}
+.Side-Navigation-Bar a{
+    width: 60%;
+    border-radius: 500px;
+    height: 10vw;
+    font-size: 4vw;
+    max-width: 225px;
+    max-height: 37.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(86, 86, 86, 0.42);
+    text-align: center;
+    text-decoration: none;
+}
+/*/---END OF HEADER---/*/
+
+/*/---HOME PAGE---/*/
+.Home-Page-View{
+    flex-direction: column;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*/Home page MyName/*/
+.MyName-Holder{
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(63, 63, 63, 0.72) 50%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MyName{
+    font-family: Krub2; 
+    width: auto;
+    font-size: clamp(2rem, 1.8901rem + 1.7582vw, 4rem);
+    text-align: center;
+}
+/*/Home page jumping arrow/*/
+.arrow-down-holder{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 15vh;
+    width: 100vw;
+}
+.arrow-down-img{
+    border-radius: 50%;
+    margin-top: 15vh;
+    width: 65px;
+    height: 65px;
+    animation: Arrow-jump 1s infinite;
+}
+@keyframes Arrow-jump{
+    from{
+        margin-top: 15vh;
+    }
+    50%{
+        margin-top: 12vh;
+    }
+}
+/*/---Div-Style-1 PAGE---/*/
+.Div-Style-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    flex-direction: column;
+}
+.Div-Style-1-1{
+    width: 50%;
+    height: auto;
+    padding: 15px 30px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0 0.3px #ffffff;
+}
+.Div-Style-1-button{
+    text-align: center;
+    border-radius: 50px;
+    padding: 5px 15px;
+    background: rgb(90, 90, 90);
+    text-decoration: none;
+    font-weight: bolder;
+}
+/*/About Page/*/
+.About-Text-Holder{
+    background: rgba(202, 202, 202, 0.045);
+}
+.About-Text-Holder ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-left: -25px;
+    text-align: left;
+}
+/*/Programing Page OUT/*/
+.Programming-Page-View{
+    background-image: url(imgs/Programming_bg_out.jpg);
+}
+.Programming-Text-Holder{
+    background:linear-gradient(0deg,rgba(116, 116, 116, 0.345) 0%, rgba(0, 0, 0, 0) 80%);
+}
+/*/Hobies Page OUT/*/
+.Hobies-Page-View{
+    background-image: url(imgs/Hobies_bg_out.jpg);
+}
+.Hobies-Text-Holder{
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0.874) 0%, rgba(0, 0, 0, 0) 80%);
+}
+/*/Contacts/*/
+.Contacts-Text-Holder{
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.092) 80%);
+}
+.Go-Up-Button{
+    position: absolute;
+    bottom: -405vh;
+    width: 80px;
+    text-align: center;
+}
+.Go-Up-Arrow{
+    width: 50px;
+    height: 50px;
+}
+/*/Programming Page IN/*/
+.About-Programming-Page{
+    background-image: url(imgs/Programming_bg_in.jpg);
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.About-Programming-Page-Text-Holder{
+    margin-top: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+    width: 50vw;
+}
+/*/Python Page OUT/*/
+.About-Programming-Python-Page{
+    background-image: url(imgs/Python_bg_out.jpg);
+}
+.About-Python-Text-Holder{
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0) 0%,rgba(147, 147, 147, 0.366) 80%);
+}
+/*/Python Page IN/*/
+.Python-Home-Page{
+    background-image: url(imgs/Python_bg_in.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.Python-Page-Text-Holder{
+    margin-top: -20vh;
+    text-align: center;
+    width: 60vw;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*/Python - The Maze/*/
+@media screen and (min-width: 769px) {
+    .Side-Navigation-Bar{
+        display: none;
+    }
+    .menu-button{
+        display: none;
+    }
+    .Navigation-Bar{
+        display: flex;
+    }
+}
