@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Bělunek Max</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+    <title>Document</title>
 </head>
-<body id="top-of-web">
-    <div class="nav-bar">
-        <a class="nav-bar-small-logo-holder" href="#top-of-web"><img class="nav-bar-small-logo" src="logo.jpg" alt=""></a>
-        <div class="nav-bar-button-holder">
-            <a class="nav-bar-links" href="">Link1</a>
-            <a class="nav-bar-links" href="">Link2</a>
-            <a class="nav-bar-links" href="">Link3</a>
-            <a class="nav-space-a"></a>
-            <a class="nav-signin" href="">Sign in</a>
-            <div class="nav-signup-box"><a class="nav-signup" href="">Sign up</a></div>
-            <a class="show-logged"></a>
-        </div>
-        <div class="nav-bar-small-screen">
-            <button id="Menu-button" class="nav-closeopen-icon" onclick="MenuOut()">
-            <div></div><div></div><div></div>
+<body>  
+    <div class="Main-Page">
+        <div class="header">
+            <a class="home-button" href="#Scroll-Pos-1"><img class="logo" src="imgs/logo.png" alt=""></a>
+            <!--Disable when screen big-->
+            <button class="menu-button" onclick="otevrit()">
+                <div></div>
+                <div></div>
+                <div></div>
             </button>
-            <div id="Menu" class="nav-bar-small-screen-buttons-holder closed-nav">
-                <a class="nav-bar-links" href="">Link1</a>
-                <a class="nav-bar-links" href="">Link2</a>
-                <a class="nav-bar-links" href="">Link3</a>
-                <span class="nav-space-b"></span>
-                <a class="nav-signin" href="">Sign in</a>
-                <div class="nav-signup-box"><a class="nav-signup" href="">Sign up</a></div>
-                <a class="show-logged"></a>
+            <div class="Side-Navigation-Bar" id="sidebar">
+                <button class="menu-button-close" onclick="zavrit()">
+                    <div></div>
+                    <div></div>
+                </button>
+                <img src="imgs/logo.png" alt="">
+                <a href="#Scroll-Pos-1"><p>Domů</p></a>
+                <a href="#Scroll-Pos-2"><p>O mně</p></a>
+                <a href="#Scroll-Pos-3"><p>Programování</p></a>
+                <a href="#Scroll-Pos-4"><p>Koníčky</p></a>
+                <a href="#Scroll-Pos-5"><p>Kontakty</p></a>
+            </div>
+            <!--Enable when screen big-->
+            <div class="Navigation-Bar">
+                <a href="#Scroll-Pos-1">Domů</a>
+                <a href="#Scroll-Pos-2">O mně</a>
+                <a href="#Scroll-Pos-3">Programování</a>
+                <a href="#Scroll-Pos-4">Koníčky</a>
+                <a href="#Scroll-Pos-5">Kontakty</a>
             </div>
         </div>
-    </div> 
-    <div class="Div-Start-of-Website">
-
-    </div>
-    <div class="Div-About-Me">
-
+        <div class="Home-Page-View Main-Div" id="Scroll-Pos-1">
+            <div class="MyName-Holder">
+                <h1 class="MyName">Max<br>Bělunek</h1>
+            </div>  
+            <div class="arrow-down-holder">
+                <a href="#Scroll-Pos-2"><img src="imgs/arrow.jpg" alt="" class="arrow-down-img"></a>
+            </div>
+        </div>
+        <div class="About-Page-View Main-Div Div-Style-1" id="Scroll-Pos-2">
+            <div class="About-Text-Holder Div-Style-1-1">
+                <h2>O MNĚ</h2>
+                <ul>
+                    <li>Jmenuji se Max Bělunek, pocházím z Rožnova p. R. a je mi 16 let.</li>
+                    <li>Baví mě programovat, hrát basketball a mám rád různé 2d a 3d hry.</li>
+                    <li>Momentálně studuji na Střední škole <a href="https://creativehill.cz">Creative Hill College</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Programming-Page-View Main-Div Div-Style-1" id="Scroll-Pos-3">
+            <div class="Programming-Text-Holder Div-Style-1-1">
+                <h2>Programování</h2>
+                <p>webové stránky, python programy, 2d a 3d hry v unity</p>
+                <a class="Programming-more-button Div-Style-1-button" href="programming.html">více --></a>
+            </div>
+        </div>
+        <div class="Hobies-Page-View Main-Div Div-Style-1" id="Scroll-Pos-4">
+            <div class="Hobies-Text-Holder Div-Style-1-1">
+                <h2>Koníčky</h2>
+                <p>Sport, vaření jídla, focení</p>
+                <a class="Hobies-more-button Div-Style-1-button" href="hobies.html">více --></a>
+            </div>
+        </div>
+        <div class="Contacts-Page-View Main-Div Div-Style-1" id="Scroll-Pos-5">
+            <div class="Contacts-Text-Holder Div-Style-1-1">
+                <h2>Kontakty</h2>
+                <b>Email:</b>
+                <p>belunekmax@gmail.com</p>
+                <b>Discord:</b>
+                <p>maxikbe</p>
+            </div>
+            <a class="Go-Up-Button" href="#Scroll-Pos-1">
+                <img src="imgs/arrow-up.jpg" class="Go-Up-Arrow"></img>
+                <p>Zpět nahoru</p>
+            </a>
+        </div>
     </div>
 </body>
 </html>
